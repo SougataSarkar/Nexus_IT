@@ -44,7 +44,7 @@ export default function Updates() {
               </h3>
               <div className="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
                 <span className="text-sm text-slate-400">5 min read</span>
-                <span className="text-purple-500 font-bold group-hover:translate-x-2 transition-transform">â†’</span>
+                <span className="text-purple-500 font-bold group-hover:translate-x-2 transition-transform">→</span>
               </div>
             </motion.article>
           ))}
