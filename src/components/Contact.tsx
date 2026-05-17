@@ -7,7 +7,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    projectType: 'Mobile App (Android/iOS)',
+    projectType: 'Full Stack Web Development',
     message: ''
   });
 
@@ -24,7 +24,7 @@ export default function Contact() {
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ name: '', email: '', projectType: 'Mobile App (Android/iOS)', message: '' });
+        setFormData({ name: '', email: '', projectType: 'Full Stack Web Development', message: '' });
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');
@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Call us</p>
-                <p className="font-bold text-lg">+1 (555) NEXUS-IT</p>
+                <p className="font-bold text-lg">+91 7003451401</p>
               </div>
             </div>
             <div className="flex items-center gap-6 text-slate-300 group p-4 rounded-2xl hover:bg-white/5 transition-all">
@@ -69,13 +69,13 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Visit us</p>
-                <p className="font-bold text-lg">Silicon Valley, CA / Berlin, DE</p>
+                <p className="font-bold text-lg">Rajarhat, Kolkata, West Bengal, 700059</p>
               </div>
             </div>
           </div>
         </div>
         
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -104,7 +104,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full bg-slate-900 border border-white/10 rounded-2xl px-6 py-4 text-white focus:border-purple-500 outline-none transition-all" 
-                    placeholder="John Doe" 
+                    placeholder="Name" 
                   />
                 </div>
                 <div className="space-y-2">
@@ -115,7 +115,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full bg-slate-900 border border-white/10 rounded-2xl px-6 py-4 text-white focus:border-purple-500 outline-none transition-all" 
-                    placeholder="john@company.com" 
+                    placeholder="name@company.com" 
                   />
                 </div>
               </div>
@@ -127,14 +127,16 @@ export default function Contact() {
                     onChange={(e) => setFormData({...formData, projectType: e.target.value})}
                     className="w-full bg-slate-900 border border-white/10 rounded-2xl px-6 py-4 text-white focus:border-purple-500 outline-none transition-all appearance-none cursor-pointer"
                   >
+                    <option>Full Stack Web Development</option>
                     <option>Mobile App (Android/iOS)</option>
-                    <option>Full Stack Web App</option>
                     <option>UI/UX Design</option>
                     <option>Enterprise AI Solutions</option>
                     <option>Other</option>
                   </select>
                   <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
-                    â–¼
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                      <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </div>
                 </div>
               </div>
