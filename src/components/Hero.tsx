@@ -53,8 +53,8 @@ export default function Hero() {
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-purple-500" />
                     <div>
-                      <p className="text-white font-bold text-sm">Marcus Chen</p>
-                      <p className="text-slate-500 text-xs uppercase">CTO, TechFlow</p>
+                      <p className="text-white font-bold text-sm">Sougata Sarkar</p>
+                      <p className="text-slate-500 text-xs uppercase">CEO, TechFlow</p>
                     </div>
                   </div>
                 </div>
