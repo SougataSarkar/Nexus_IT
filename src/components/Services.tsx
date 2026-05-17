@@ -75,7 +75,7 @@ export default function Services() {
                   {s.desc}
                 </p>
                 <div className="mt-8 flex items-center gap-2 text-sm font-bold text-purple-500 group-hover:gap-4 transition-all">
-                  Read more <span className="text-lg">â†’</span>
+                  Read more <span className="text-lg">→</span>
                 </div>
               </div>
             </motion.div>
