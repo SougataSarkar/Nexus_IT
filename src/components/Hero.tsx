@@ -54,7 +54,7 @@ export default function Hero() {
                     <div className="w-10 h-10 rounded-full bg-purple-500" />
                     <div>
                       <p className="text-white font-bold text-sm">Sougata Sarkar</p>
-                      <p className="text-slate-500 text-xs uppercase">CEO, TechFlow</p>
+                      <p className="text-slate-500 text-xs uppercase">CEO, NexusDev</p>
                     </div>
                   </div>
                 </div>
