@@ -24,7 +24,7 @@ export default function Header() {
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-fuchsia-500 to-indigo-600 bg-clip-text text-transparent"
         >
-          NexusDev.
+          NexusDev
         </motion.div>
 
         {/* Desktop Nav */}
